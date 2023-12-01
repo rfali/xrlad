@@ -95,16 +95,16 @@ The results for each experiment run are saved in `results/{experiment_name}/{exp
 | --------------------------------------- | ------------------------------------------------------------------------------------- |
 | reg1_info_rl                            | $I_{v1} (t)$ = Information processed by frontal region                              |
 | reg2_info_rl                            | $I_{v1} (t)$ = Information processed by hippocampal region                          |
-| reg1_fdg_rl                             | $Y_{v1} (t)$ = Frontal activity (fluorodeoxyglucose). Interchangeable used for energy consumption $M=\sum Y$  |
-| reg2_fdg_rl                             | $Y_{v2} (t)$ = Hippocampal activity (fluorodeoxyglucose). Interchangeable used for energy consumption $M=\sum Y$                |
+| reg1_fdg_rl                             | $Y_{v1} (t)$ = Frontal activity (fluorodeoxyglucose). Interchangeably used for energy consumption $M=\sum Y$  |
+| reg2_fdg_rl                             | $Y_{v2} (t)$ = Hippocampal activity (fluorodeoxyglucose). Interchangeably used for energy consumption $M=\sum Y$                |
 | reg1_mri_rl                             | $X_{v1} (t)$ = Frontal region size                                                  |
 | reg2_mri_rl                             | $X_{v2} (t)$ = Hippocampal region size                                              |
 | reg1_D_rl                               | $D_{v1} (t)$ = Frontal instantaneous amyloid accumulation                           |
 | reg2_D_rl                               | $D_{v2} (t)$ = Hippocampal instantaneous amyloid accumulation                       |
 | beta_rl, alpha1_rl, alpha2_rl, gamma_rl | Parameters used by RL model for the DE-based simulator                              |
-| cogsc_rl                                | $C(t) = \sum I_v (t)$ Cognition score computed by RL (reg1_info_rl + reg2_info_rl) |
-| cogsc                                   | $C(t)$ Cognition score (MMSE in our case)   |
-| cog_diff                                | Difference between cogsc_rl and cogsc  |
+| cogsc_rl                                | $C(t) = \sum I_v (t)$ Cognition score computed by RL (reg1_info_rl + reg2_info_rl)  |
+| cogsc                                   | $C(t)$ Actual cognition score (MMSE in our experiments)                             |
+| cog_diff                                | Difference between cogsc_rl and cogsc                                               |
 
 **2. Experiment Configurations and Errors (MAE and MSE) for the Experiment**
 
@@ -123,8 +123,8 @@ Each experiment's config and the errors between RL predictions and ground truth 
 | cog_mtl           | $I_{HC}(0)$ Initial cognition score (baseline year 0) for Hippocampus (HC) region. $I_{PFC}(0) = 10.0 - I_{HC}(0)$            |
 | discount          | Discount factor applied to rewards in RL.                                                                                     |
 | max_time_steps    | Maximum number of time steps (years in this case) n a training episode.                                                       |
-| w_lambda          | Trade-off between the mismatch (C_task - C(t)) and the energy cost M(t) in the reward function (see Eq 8 of the original paper)|
-| action_lim        | Limit or constraint applied to action values. Set to 2.0 , so $\Delta I(t)$ = [-2, 2]                                         |
+| w_lambda          | Trade-off between the mismatch ($C_{task}$ - C(t)) and the energy cost M(t) in the reward function (see Eq 1 of the paper)        |
+| action_lim        | Limit or constraint applied to action values. Set to 2.0 , hence $\Delta I(t)$ = [-2, 2]                                      |
 | cog_init          | Initial value or setting for cognitive measurements. Set to `full` (a value of 10.0)                                          |
 | cog_type          | Type of cognitive data, e.g., 'variable' or 'fixed'.                                                                          |
 | energy_model      | Type or name of the energy model used in the experiment. `inverse` or `inverse_squared`                                       | 
