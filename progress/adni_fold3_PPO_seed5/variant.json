@@ -1,0 +1,10 @@
+{
+  "action_type": "delta",
+  "algo_name": "PPO",
+  "batch_size": 1000,
+  "gamma": 1.0,
+  "gamma_type": "fixed",
+  "max_time_steps": 11,
+  "n_epochs": 1000,
+  "seed": 5
+}
