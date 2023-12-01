@@ -102,7 +102,7 @@ The results for each experiment run are saved in `results/{experiment_name}/{exp
 | reg1_D_rl                               | $D_{v1} (t)$ = Frontal instantaneous amyloid accumulation                           |
 | reg2_D_rl                               | $D_{v2} (t)$ = Hippocampal instantaneous amyloid accumulation                       |
 | beta_rl, alpha1_rl, alpha2_rl, gamma_rl | Parameters used by RL model for the DE-based simulator                              |
-| cogsc_rl                                | $C(t) = \sum I_v (t) $ Cognition score computed by RL (reg1_info_rl + reg2_info_rl) |
+| cogsc_rl                                | $C(t) = \sum I_v (t)$ Cognition score computed by RL (reg1_info_rl + reg2_info_rl) |
 | cogsc                                   | $C(t)$ Cognition score (MMSE in our case)   |
 | cog_diff                                | Difference between cogsc_rl and cogsc  |
 
