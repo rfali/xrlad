@@ -1,13 +1,13 @@
 # Unifying Interpretability and Explainability for Alzheimer’s Disease Progression Prediction
 
-Code associated with the paper "Unifying Interpretability and Explainability for Alzheimer’s Disease Progression Prediction". This work has been presented at the [NeurIPS 2023's XAIA](https://xai-in-action.github.io/) (XAI in Action: Past, Present, and Future Applications) workshop [[PDF](https://openreview.net/pdf?id=joaWGug1CU)] and [AAAI 2024's XAI4DRL](https://xai4drl.github.io/) (eXplainable AI approaches for Deep Reinforcement Learning) workshop ([PDF](https://openreview.net/pdf?id=OuhYChnUeP)). If you use this code in your own work, we request that you kindly cite our paper:
+Code associated with the paper "Unifying Interpretability and Explainability for Alzheimer’s Disease Progression Prediction". This work has been presented at the [NeurIPS 2023's XAIA](https://xai-in-action.github.io/) (XAI in Action: Past, Present, and Future Applications) workshop [[PDF](https://openreview.net/pdf?id=joaWGug1CU)] and [AAAI 2024's XAI4DRL](https://xai4drl.github.io/) (eXplainable AI approaches for Deep Reinforcement Learning) workshop [[PDF](https://openreview.net/pdf?id=OuhYChnUeP)]. If you use this code in your own work, we request that you kindly cite our paper:
 ```
 @article{ali2024unifying,
   title={Unifying Interpretability and Explainability for Alzheimer’s Disease Progression Prediction},
   author={Ali, Raja Farrukh and Milani, Stephanie and Woods, John and Adeniji, Emmanuel and Farooq, Ayesha and Mansel, Clayton and Burns, Jeffrey and Hsu, William},
-  journal={arXiv preprint arXiv:YYMM.NNNN}, #TBD
+  journal={arXiv preprint arXiv:2406.07777}
   year={2024},
-  url={https://arxiv.org/abs/YYMM.NNNN} #TBD
+  url={https://arxiv.org/abs/2406.07777}
 }
 ```
 
